@@ -1,0 +1,14 @@
+linters:
+  disable-all: true
+  enable:
+    - errcheck
+    - govet
+    - gci
+
+linters-settings:
+    gci:
+      sections:
+        - standard
+        - default
+        - prefix(generate_cart)
+      custom-order: true
